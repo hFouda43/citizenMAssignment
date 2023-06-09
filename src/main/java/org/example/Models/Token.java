@@ -7,7 +7,7 @@ public class Token {
     private String result;
 
     public String getToken() {
-        return token;
+        return "Bearer "+token;
     }
 
     public void setToken(String token) {

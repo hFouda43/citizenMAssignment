@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d64a6a8-6d8c-4aa0-9de5-c81c239b279f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/ReturnedBooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/UserBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ApiClientsServices/Account/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ApiClientsServices/Account/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ApiClientsServices/BookStore/BookStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ApiClientsServices/BookStore/BookStoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Network/ApiClients/AccountApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Network/ApiClients/AccountApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Network/ApiClients/BookStoreApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Network/ApiClients/BookStoreApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/resources/TestDataBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/resources/TestDataBuild.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testCases/BookStoreTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testCases/BookStoreTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +53,12 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/hendf/Documents/Hend Fouda/Sprite Cloud/SpriteCloudAssignment&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.BookStoreTests.generateAuthToken">
+  <component name="RunManager" selected="TestNG.BookStoreTests.addBooksToUser">
     <configuration name="BookStoreTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CitizenM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.testCases.*" />
+          <option name="PATTERN" value="org.example.resources.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,17 +71,71 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookStoreTests.generateAuthToken" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BookStoreTests.addBooksToUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CitizenM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.testCases.*" />
+          <option name="PATTERN" value="org.example.resources.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testCases" />
       <option name="MAIN_CLASS_NAME" value="org.example.testCases.BookStoreTests" />
-      <option name="METHOD_NAME" value="generateAuthToken" />
+      <option name="METHOD_NAME" value="addBooksToUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookStoreTests.createUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CitizenM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testCases" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.BookStoreTests" />
+      <option name="METHOD_NAME" value="createUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookStoreTests.getFilteredBooks" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CitizenM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testCases" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.BookStoreTests" />
+      <option name="METHOD_NAME" value="getFilteredBooks" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookStoreTests.getListOfBooks" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CitizenM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testCases" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.BookStoreTests" />
+      <option name="METHOD_NAME" value="getListOfBooks" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -88,8 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BookStoreTests.generateAuthToken" />
+        <item itemvalue="TestNG.BookStoreTests.addBooksToUser" />
+        <item itemvalue="TestNG.BookStoreTests.getFilteredBooks" />
         <item itemvalue="TestNG.BookStoreTests" />
+        <item itemvalue="TestNG.BookStoreTests.getListOfBooks" />
+        <item itemvalue="TestNG.BookStoreTests.createUser" />
       </list>
     </recent_temporary>
   </component>
@@ -114,5 +174,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/testCases/BookStoreTests.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/testCases/BookStoreTests.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

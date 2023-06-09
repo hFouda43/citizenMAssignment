@@ -3,9 +3,7 @@ package org.example.Network.ApiClients;
 import okhttp3.ResponseBody;
 import org.example.ApiClientsServices.Account.AccountService;
 import org.example.ApiClientsServices.BookStore.BookStoreService;
-import org.example.Models.AddBook;
-import org.example.Models.Book;
-import org.example.Models.Token;
+import org.example.Models.*;
 import org.example.Network.RetrofitClient;
 import org.example.resources.TestDataBuild;
 import retrofit2.Response;
@@ -24,7 +22,7 @@ public class BookStoreApiClient {
         bookStoreService=retrofit.create(BookStoreService.class);
     }
 
-    public List<Book> getBooks() throws IOException {
+    public ReturnedBooks getBooks() throws IOException {
         return bookStoreService.getBooks().execute().body();
     }
 
@@ -32,7 +30,7 @@ public class BookStoreApiClient {
         return bookStoreService.getBookByIsbn(isbn).execute().body();
     }
 
-    public ResponseBody addListOfBooks(String token,AddBook addBook){
-        return (ResponseBody) bookStoreService.addListOfBooks(token,addBook);
+    public List<Isbn> addListOfBooks(String token, AddBook addBook) throws IOException {
+        return  bookStoreService.addListOfBooks(token,addBook).execute().body();
     }
 }

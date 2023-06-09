@@ -16,15 +16,22 @@ public class BookStoreTests {
     BookStoreApiClient bookStoreApiClient = new BookStoreApiClient();
     User user;
     Token token;
-    List<Book> books;
-    List<String> isbns;
-    List<Book> booksList;
-    List<Isbn> isbnList;
+    ReturnedBooks returnedBooks;
+    List<String> isbns = new ArrayList<>();
+    List<Book> booksList= new ArrayList<Book>();
+    List<Isbn> isbnList= new ArrayList<>();
 
     @Test
-    public void createUser() throws IOException {
-        user = accountApiClient.createNewUser();
-        System.out.println("Successful Request");
+    public void createUser() {
+        try {
+            user = accountApiClient.createNewUser();
+            System.out.println("Successful Request");
+            System.out.println(user.getUserID());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        //  System.out.println(user.body().getUserName());
+//        System.out.println(user.getBooks());
 
     }
 
@@ -40,38 +47,65 @@ public class BookStoreTests {
 
     @Test
     public void getListOfBooks() throws IOException {
-        books = bookStoreApiClient.getBooks();
-        for (int i = 0; i < books.size(); i++) {
-            System.out.println(books.get(i).getAuthor());
-            System.out.println(books.get(i).getIsbn());
+        returnedBooks = bookStoreApiClient.getBooks();
+        for (int i = 0; i < returnedBooks.getBooks().size(); i++) {
+            System.out.println(returnedBooks.getBooks().get(i).getAuthor());
+            System.out.println(returnedBooks.getBooks().get(i).getIsbn());
         }
     }
 
     @Test
     public void getFilteredBooks() throws IOException {
+        returnedBooks = bookStoreApiClient.getBooks();
 
-        for (int i = 0; i < books.size(); i++) {
-            if (books.get(i).getIsbn().contains("978144")) {
-                isbns.add(books.get(i).getIsbn());
+        for (int i = 0; i < returnedBooks.getBooks().size(); i++) {
+            if (returnedBooks.getBooks().get(i).getIsbn().contains("978144")) {
+                isbns.add(returnedBooks.getBooks().get(i).getIsbn());
             }
         }
 
         for (int i = 0; i < isbns.size(); i++) {
+            System.out.println(isbns.get(i));
+
             booksList.add(bookStoreApiClient.getBooksByIsbn(isbns.get(i)));
+
         }
+
+
 
     }
 
     @Test
-    public void addBooksToUser(){
+    public void addBooksToUser() throws IOException {
+
+        user = accountApiClient.createNewUser();
+        token = accountApiClient.generateUserToken();
+//String token2="Bearer "+token.getToken();
+        returnedBooks = bookStoreApiClient.getBooks();
+
+        for (int i = 0; i < returnedBooks.getBooks().size(); i++) {
+            if (returnedBooks.getBooks().get(i).getIsbn().contains("978144")) {
+                isbns.add(returnedBooks.getBooks().get(i).getIsbn());
+            }
+        }
+        
+        
+
         AddBook addBook=new AddBook();
-        List<CollectionOfIsbns> collectionOfIsbns = new ArrayList<CollectionOfIsbns>();
+        List<CollectionOfIsbns> collectionOfIsbns = new ArrayList<>();
         for (int i = 0; i < isbns.size(); i++) {
-            collectionOfIsbns.add(se);
+            CollectionOfIsbns collectionOfIsbns1=new CollectionOfIsbns();
+            collectionOfIsbns1.setIsbn(isbns.get(i));
+            collectionOfIsbns.add(collectionOfIsbns1);
         }
         addBook.setUserId(user.getUserID());
         addBook.setCollectionOfIsbns(collectionOfIsbns);
-isbnList=bookStoreApiClient.addListOfBooks(token,addBook);
+        isbnList=bookStoreApiClient.addListOfBooks(token.getToken(),addBook);
+
+        System.out.println("SUCCESSSSS");
+        for (int i = 0; i < isbnList.size(); i++) {
+            System.out.println(isbnList.get(i).getIsbn());
+        }
     }
 
 

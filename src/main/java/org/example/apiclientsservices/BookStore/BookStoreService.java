@@ -1,13 +1,10 @@
-package org.example.ApiClientsServices.BookStore;
+package org.example.apiclientsservices.BookStore;
 
-import org.example.Models.AddBook;
-import org.example.Models.Book;
-import org.example.Models.Isbn;
-import org.example.Models.ReturnedBooks;
+import org.example.models.AddBook;
+import org.example.models.Book;
+import org.example.models.ReturnedBooks;
 import retrofit2.Call;
 import retrofit2.http.*;
-
-import java.util.List;
 
 public interface BookStoreService {
     //Get List of books
@@ -20,5 +17,5 @@ public interface BookStoreService {
 
     //Post books to the user in context
     @POST("/BookStore/v1/Books")
-    Call<List<Isbn>> addListOfBooks(@Header("Authorization") String token, @Body AddBook addBook);
+    Call<ReturnedBooks> addListOfBooks(@Header("Authorization") String token, @Body AddBook addBook);
 }

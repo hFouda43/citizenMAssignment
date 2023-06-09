@@ -5,17 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d64a6a8-6d8c-4aa0-9de5-c81c239b279f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/ReturnedBooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/UserBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demoqapageobjects/BookStorePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/demoqapageobjects/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testCases/apistests/BookStoreTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testCases/demoqa/testcomponents/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testCases/demoqa/tests/demoQaTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ApiClientsServices/Account/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ApiClientsServices/Account/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ApiClientsServices/BookStore/BookStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ApiClientsServices/BookStore/BookStoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Network/ApiClients/AccountApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Network/ApiClients/AccountApiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Network/ApiClients/BookStoreApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Network/ApiClients/BookStoreApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ApiClientsServices/Account/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/apiclientsservices/Account/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ApiClientsServices/BookStore/BookStoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/apiclientsservices/BookStore/BookStoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/AddBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/AddBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/CollectionOfIsbns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/CollectionOfIsbns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/Isbn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Isbn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/ReturnedBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/ReturnedBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Models/UserBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/UserBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Network/ApiClients/AccountApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/network/ApiClients/AccountApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Network/ApiClients/BookStoreApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/network/ApiClients/BookStoreApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Network/RetrofitClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/network/RetrofitClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/resources/TestDataBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/resources/TestDataBuild.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testCases/BookStoreTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testCases/BookStoreTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testCases/BookStoreTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,15 +56,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hendf/Documents/Hend Fouda/Sprite Cloud/SpriteCloudAssignment&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/hendf/Documents/Hend Fouda/Sprite Cloud/SpriteCloudAssignment",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.BookStoreTests.addBooksToUser">
+}]]></component>
+  <component name="RunManager" selected="TestNG.BookStoreTests">
     <configuration name="BookStoreTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CitizenM" />
       <extension name="coverage">
@@ -63,7 +81,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testCases" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testCases.BookStoreTests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.apistests.BookStoreTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -80,7 +98,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testCases" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testCases.BookStoreTests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.apistests.BookStoreTests" />
       <option name="METHOD_NAME" value="addBooksToUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -98,26 +116,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testCases" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testCases.BookStoreTests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.apistests.BookStoreTests" />
       <option name="METHOD_NAME" value="createUser" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookStoreTests.getFilteredBooks" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CitizenM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.resources.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.testCases" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testCases.BookStoreTests" />
-      <option name="METHOD_NAME" value="getFilteredBooks" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -129,12 +129,12 @@
       <module name="CitizenM" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.resources.*" />
+          <option name="PATTERN" value="org.example.testCases.apistests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.testCases" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testCases.BookStoreTests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.apistests.BookStoreTests" />
       <option name="METHOD_NAME" value="getListOfBooks" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -143,13 +143,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demoQaTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CitizenM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testCases.demoqa.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testCases.demoqa.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testCases.demoqa.tests.demoQaTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BookStoreTests.addBooksToUser" />
-        <item itemvalue="TestNG.BookStoreTests.getFilteredBooks" />
         <item itemvalue="TestNG.BookStoreTests" />
-        <item itemvalue="TestNG.BookStoreTests.getListOfBooks" />
+        <item itemvalue="TestNG.demoQaTests" />
         <item itemvalue="TestNG.BookStoreTests.createUser" />
+        <item itemvalue="TestNG.BookStoreTests.addBooksToUser" />
+        <item itemvalue="TestNG.BookStoreTests.getListOfBooks" />
       </list>
     </recent_temporary>
   </component>
@@ -161,8 +178,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686085685547</updated>
+      <workItem from="1686297649958" duration="8265000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -174,21 +195,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/testCases/BookStoreTests.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/testCases/BookStoreTests.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -1,13 +1,12 @@
 package org.example.resources;
 
-import org.example.Models.Isbn;
-import org.example.Models.User;
-import org.example.Models.UserBody;
+import org.example.models.UserBody;
 
 import java.util.UUID;
 
 public class TestDataBuild {
 
+    // Preparing some test data
     public UserBody newUserPayload() {
 
         UserBody newUserPayload = new UserBody();

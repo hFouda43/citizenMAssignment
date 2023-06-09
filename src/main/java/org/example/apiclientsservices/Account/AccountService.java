@@ -1,11 +1,10 @@
-package org.example.ApiClientsServices.Account;
+package org.example.apiclientsservices.Account;
 
 import okhttp3.ResponseBody;
-import org.example.Models.Token;
-import org.example.Models.User;
-import org.example.Models.UserBody;
+import org.example.models.Token;
+import org.example.models.User;
+import org.example.models.UserBody;
 import retrofit2.Call;
-import retrofit2.Response;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;

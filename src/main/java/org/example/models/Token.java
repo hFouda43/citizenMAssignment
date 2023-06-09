@@ -1,4 +1,4 @@
-package org.example.Models;
+package org.example.models;
 
 public class Token {
     private String token;
@@ -7,7 +7,7 @@ public class Token {
     private String result;
 
     public String getToken() {
-        return "Bearer "+token;
+        return token;
     }
 
     public void setToken(String token) {

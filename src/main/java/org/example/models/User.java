@@ -1,20 +1,12 @@
-package org.example.Models;
+package org.example.models;
 
 import java.util.ArrayList;
 
 public class User {
-
-    private String userName;
     private String userID;
+    private String username;
     private ArrayList<String> books;
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
 
 
     public String getUserID() {
@@ -23,6 +15,14 @@ public class User {
 
     public void setUserID(String userID) {
         this.userID = userID;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public ArrayList<String> getBooks() {

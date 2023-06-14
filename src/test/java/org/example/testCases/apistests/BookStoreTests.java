@@ -27,7 +27,7 @@ public class BookStoreTests {
         try {
             user = accountApiClient.createNewUser();
             Assert.assertEquals(accountApiClient.getUserBody().getUserName(), user.getUsername());
-            Assert.assertEquals(0, user.getBooks().size());
+            Assert.assertEquals(user.getBooks().size(), 0);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -38,8 +38,8 @@ public class BookStoreTests {
     public void generateAuthToken() {
         try {
             token = accountApiClient.generateUserToken();
-            Assert.assertEquals("User authorized successfully.", token.getResult());
-            Assert.assertEquals("Success", token.getStatus());
+            Assert.assertEquals( token.getResult(),"User authorized successfully.");
+            Assert.assertEquals( token.getStatus(),"Success");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -50,7 +50,7 @@ public class BookStoreTests {
     public void getListOfBooks() {
         try {
             returnedBooks = bookStoreApiClient.getBooks();
-            Assert.assertNotEquals(0,returnedBooks.getBooks().size());
+            Assert.assertNotEquals(returnedBooks.getBooks().size(),0);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -73,7 +73,7 @@ public class BookStoreTests {
                 booksList.add(bookStoreApiClient.getBooksByIsbn(isbns.get(i)));
 
             }
-            Assert.assertNotEquals(0,booksList.size());
+            Assert.assertNotEquals(booksList.size(),0);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -108,7 +108,7 @@ public class BookStoreTests {
             addBook.setCollectionOfIsbns(collectionOfIsbns);
             returnedBooks = bookStoreApiClient.addListOfBooks(authToken, addBook);
 
-            Assert.assertEquals(4,returnedBooks.getBooks().size());
+            Assert.assertEquals(returnedBooks.getBooks().size(),4);
 
 
         } catch (Exception e) {
